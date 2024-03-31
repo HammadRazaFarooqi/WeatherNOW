@@ -1,0 +1,20 @@
+.grid-container:hover{
+    cursor: pointer;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); 
+    grid-gap: 10px; 
+  }
+  
+  .box {
+    padding: 20px;
+    text-align: center;
+  }
+  *{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }

@@ -1,0 +1,17 @@
+
+.background {
+  background: #373b44; 
+  background: linear-gradient(
+    to right,
+    #4286f4,
+    #373b44
+    ); 
+    color: aliceblue;
+    min-height: 100vh !important;
+  }
+  *{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
