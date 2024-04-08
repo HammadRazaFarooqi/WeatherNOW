@@ -68,9 +68,9 @@ function Main() {
     }
   };
 
-  // Call onSearchedCity with default city "Lahore" when the component mounts
   useEffect(() => {
     onSearchedCity("Lahore")
+    // eslint-disable-next-line
   }, []);
 
   return (

@@ -6,9 +6,9 @@ import "./MapComponent.css";
 
 function MapComponent() {
   useEffect(() => {
-    const OSM_URL = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+    const OSM_URL = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
     const OSM_ATTRIB =
-      '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+      '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors';
     const osmLayer = L.tileLayer(OSM_URL, { attribution: OSM_ATTRIB });
 
     const WAQI_URL =

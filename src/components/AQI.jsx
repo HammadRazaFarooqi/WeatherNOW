@@ -65,7 +65,6 @@ const AQI = () => {
                   key={index}
                 >
                   {city.city}
-                  {/* <span class="badge text-bg-primary rounded-pill">{city.aqi}</span> */}
                   <span
                     className={`badge rounded-pill w-25 bg-light ${getAQIClass(
                       city.aqi
@@ -86,7 +85,6 @@ const AQI = () => {
                   key={index}
                 >
                   {city.city}
-                  {/* <span class="badge text-bg-primary rounded-pill">{city.aqi}</span> */}
                   <span
                     className={`badge rounded-pill w-25 text-light ${getAQIClass(
                       city.aqi

@@ -53,7 +53,6 @@ function Weather({ weatherData, weatherLocationData, aqiValue }) {
     calculateAQI();
   }, [weatherData]);
 
-  // Function to calculate AQI for individual pollutant
   const calculateAQIForPollutant = (concentration, breakpoints) => {
     let AQI = 0;
 
@@ -86,7 +85,6 @@ function Weather({ weatherData, weatherLocationData, aqiValue }) {
 
     return dateTimeWithAMPM;
   }
-  // Function to calculate AQI for individual pollutant
   const calculateAQI = (concentration, breakpoints) => {
     let AQI = 0;
 
@@ -109,7 +107,6 @@ function Weather({ weatherData, weatherLocationData, aqiValue }) {
     return AQI;
   };
 
-  // Function to calculate overall AQI
   const calculateOverallAQI = (pollutants) => {
     let overallAQI = 0;
 
@@ -123,7 +120,6 @@ function Weather({ weatherData, weatherLocationData, aqiValue }) {
     return overallAQI;
   };
 
-  // Sample data for PM2.5 and PM10 pollutants with AQI breakpoints
   const pm25 = {
     concentration: weatherData ? weatherData.air_quality.pm2_5 : 0.0,
     breakpoints: [
@@ -173,9 +169,7 @@ function Weather({ weatherData, weatherLocationData, aqiValue }) {
       // Add more breakpoints as needed
     ],
   };
-  // Calculate overall AQI based on PM2.5 and PM10
   const aqi = calculateOverallAQI([pm25, pm10, co, no2, o3, so2]);
-  // setOverallAqi(aqi);
   return (
     <div className="WeatherBox w-100 border-dark rounded-4 p-3 mx-5 ">
       <h1 className="d-flex justify-content-center">CURRENT WEATHER</h1>

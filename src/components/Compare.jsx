@@ -19,7 +19,7 @@ function Compare() {
 
   const onSearchedCity = (data) => {
     setLoader(true);
-    const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${data}&days=7&aqi=yes&alerts=yes`;
+    const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${data}&days=7&aqi=yes&alerts=yes`;
     const fetchData = async () => {
       try {
         const response = await axios.get(API_URL);
@@ -39,7 +39,7 @@ function Compare() {
 
   const getLonAndLat = async (data) => {
     setLoader(true);
-    const API_URL = `http://api.openweathermap.org/geo/1.0/direct?q=${data}&limit=1&appid=da946ec49eff7239b0c6b35d73a597cb`;
+    const API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${data}&limit=1&appid=da946ec49eff7239b0c6b35d73a597cb`;
     try {
       const response = await axios.get(API_URL);
       if (response.data && response.data.length > 0) {
@@ -54,7 +54,7 @@ function Compare() {
 
   const getAqiVAlue = async (lon, lat) => {
     setLoader(true);
-    const API_URL = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=da946ec49eff7239b0c6b35d73a597cb`;
+    const API_URL = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=da946ec49eff7239b0c6b35d73a597cb`;
     try {
       const response = await axios.get(API_URL);
       if (response.data && response.data.list.length > 0) {
@@ -69,7 +69,7 @@ function Compare() {
 
   const onSearchedSecondCity = (secondData) => {
     setLoader(true);
-    const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${secondData}&days=7&aqi=yes&alerts=yes`;
+    const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${secondData}&days=7&aqi=yes&alerts=yes`;
     const fetchData = async () => {
       try {
         const response = await axios.get(API_URL);
@@ -90,7 +90,7 @@ function Compare() {
 
   const getLonAndLat2 = async (data) => {
     setLoader(true);
-    const API_URL = `http://api.openweathermap.org/geo/1.0/direct?q=${data}&limit=1&appid=da946ec49eff7239b0c6b35d73a597cb`;
+    const API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${data}&limit=1&appid=da946ec49eff7239b0c6b35d73a597cb`;
     try {
       const response = await axios.get(API_URL);
       if (response.data && response.data.length > 0) {
@@ -105,7 +105,7 @@ function Compare() {
 
   const getAqi2VAlue = async (lon, lat) => {
     setLoader(true);
-    const API_URL = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=da946ec49eff7239b0c6b35d73a597cb`;
+    const API_URL = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=da946ec49eff7239b0c6b35d73a597cb`;
     try {
       const response = await axios.get(API_URL);
       if (response.data && response.data.list.length > 0) {
