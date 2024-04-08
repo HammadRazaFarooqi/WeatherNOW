@@ -1,0 +1,25 @@
+.input-group form {
+  width: 75% !important;
+}
+.input-group form input {
+  width: 120% !important;
+  border-radius: 5px;
+  /* border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; */
+  height: 2.5rem;
+  border: none;
+}
+
+#react-autowhatever-1 ul {
+  list-style: none;
+  position: absolute;
+  background: white;
+  color: black;
+  width: 75% !important;
+}
+#react-autowhatever-1 li {
+    height: 2.5rem;}
+#react-autowhatever-1 li:hover {
+  background: rgba(230, 225, 225, 0.795);
+  cursor: pointer;
+}

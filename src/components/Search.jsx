@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import CityAutocomplete from "./CityAutocomplete";
+import './Search.css'
 function OnSearchClick({ searchedCity }) {
   const [searchData, setSearchData] = useState("");
 
@@ -7,8 +8,9 @@ function OnSearchClick({ searchedCity }) {
     setSearchData(event.target.value);
   };
 
-  const onClickSearch = () => {
-    searchedCity(searchData);
+  const onClickSearch = (event) => {
+    console.log(event)
+    searchedCity(event);
   };
 
   const onKeyPress = (event) => {
@@ -19,23 +21,8 @@ function OnSearchClick({ searchedCity }) {
 
   return (
     <div className="input-group mb-3 w-50 mx-auto  ">
-      <input
-        type="text"
-        className="form-control "
-        placeholder="Enter City Name"
-        aria-label="Recipient's username"
-        aria-describedby="button-addon2"
-        onChange={onInputChange}
-        onKeyDown={onKeyPress} 
-      />
-      <button
-        className="btn btn-light mx-3"
-        type="button"
-        id="button-addon2"
-        onClick={onClickSearch}
-      >
-        Search
-      </button>
+     <CityAutocomplete onChange={onClickSearch}/>
+      
     </div>
   );
 }

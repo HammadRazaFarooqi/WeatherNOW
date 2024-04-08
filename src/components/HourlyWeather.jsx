@@ -22,7 +22,7 @@ function HourlyWeather(HourlyData) {
       : "";
 
   return (
-    <div className=" box d-flex text-center overflow-auto ms-1 h-100">
+    <div className=" box d-flex text-center overflow-auto ms-1 h-100 mt-5">
       {listItems}
     </div>
   );

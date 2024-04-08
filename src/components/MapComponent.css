@@ -1,0 +1,46 @@
+/* .table tbody tr:nth-child(1) td {
+  background-color: #009966 !important;
+}
+.table tbody tr:nth-child(2) td {
+  background-color: #ffde33 !important;
+}
+.table tbody tr:nth-child(3) td {
+  background-color: #ff9933 !important;
+}
+.table tbody tr:nth-child(4) td {
+  background-color: #cc0033 !important;
+}
+.table tbody tr:nth-child(5) td {
+  background-color: #660099 !important;
+}
+.table tbody tr:nth-child(6) td {
+  background-color: #7e0023 !important;
+} */
+.good{
+  background-color: #009966 !important;
+  color: white;
+}
+.moderate {
+  background-color: #ffde33 !important;
+  color: #000000;
+}
+.unhealthy_for_sensitive_groups {
+  background-color: #ff9933 !important;
+  color: white;
+}
+.unhealthy {
+  background-color: #cc0033 !important;
+  color: white;
+}
+.very_unhealthy {
+  background-color: #660099 !important;
+  color: white;
+}
+.hazardous {
+  background-color: #7e0023 !important;
+  color: white;
+}
+
+.heading{
+  background-color: #fff;
+}

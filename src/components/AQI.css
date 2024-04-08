@@ -1,0 +1,19 @@
+.good{
+  background-color: #009966 !important;
+}
+.moderate {
+  background-color: #ffde33 !important;
+  color: #009966;
+}
+.unhealthy_for_sensitive_groups {
+  background-color: #ff9933 !important;
+}
+.unhealthy {
+  background-color: #cc0033 !important;
+}
+.very_unhealthy {
+  background-color: #660099 !important;
+}
+.hazardous {
+  background-color: #7e0023 !important;
+}
