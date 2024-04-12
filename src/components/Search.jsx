@@ -6,7 +6,6 @@ function OnSearchClick({ searchedCity }) {
  
 
   const onClickSearch = (event) => {
-    console.log(event)
     searchedCity(event);
   };
 

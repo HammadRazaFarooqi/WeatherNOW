@@ -34,7 +34,6 @@ function CityAutocomplete(props) {
 
   const onSuggestionSelected = (event, { suggestion }) => {
     setValue(`${suggestion.name}, ${suggestion.country}`);
-    console.log(suggestion)
     props.onChange(suggestion.name);
   };
 
