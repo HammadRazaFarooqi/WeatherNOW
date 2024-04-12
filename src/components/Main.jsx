@@ -89,9 +89,7 @@ function Main() {
           22: { ...response.data.forecast.forecastday[0].hour[21].air_quality },
           23: { ...response.data.forecast.forecastday[0].hour[22].air_quality },
           24: { ...response.data.forecast.forecastday[0].hour[23].air_quality },
-        };
-        console.log("hourlyData:", hourlyData);
-        // Usage
+        };        // Usage
         const nowCastPM25 = calculateNowCast(hourlyData, 'pm2_5');
         const nowCastPM10 = calculateNowCast(hourlyData, 'pm10');
         setAqi(((nowCastPM25+nowCastPM10)/1.5).toFixed(2));

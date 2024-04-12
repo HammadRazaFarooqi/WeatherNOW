@@ -263,7 +263,7 @@ function Weather({ weatherData, weatherLocationData, aqiValue }) {
           className="text-center "
           data-bs-toggle="tooltip"
           data-bs-placement="top"
-          data-bs-custom-class="custom-tooltip"
+          data-bs-custom-className="custom-tooltip"
           data-bs-title="This top tooltip is themed via CSS variables."
         >
           <svg
